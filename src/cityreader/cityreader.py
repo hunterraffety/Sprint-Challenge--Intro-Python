@@ -18,19 +18,20 @@ class City():
 
 import csv
 
+cities = []
+
 with open('cities.csv', 'r') as citiesdata:
   csvreader = csv.reader(citiesdata)
 
   next(csvreader)
 
   for row in csvreader:
-    print(row)
+    cities.append(row)
 
 # Store the instances in the "cities" list, below.
 #
 # Note that the first line of the CSV is header that describes the fields--this
 # should not be loaded into a City object.
-cities = []
 
 def cityreader(cities=[]):
   # TODO Implement the functionality to read from the 'cities.csv' file
@@ -42,8 +43,8 @@ def cityreader(cities=[]):
 cityreader(cities)
 
 # Print the list of cities (name, lat, lon), 1 record per line.
-for c in cities:
-    print(c)
+# for c in cities:
+#     print(c)
 
 # STRETCH GOAL!
 #
