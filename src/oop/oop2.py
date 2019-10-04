@@ -8,7 +8,7 @@ class GroundVehicle():
         self.num_wheels = num_wheels
 
     def drive(self):
-        print(f"vroooom")
+        return "vroooom"
     # TODO
 
 
@@ -23,7 +23,7 @@ class Motorcycle(GroundVehicle):
         self.num_wheels = num_wheels
 
     def drive(self):
-        print(f"BRAAAP!!")
+        return "BRAAAP!!"
 
 # TODO
 
